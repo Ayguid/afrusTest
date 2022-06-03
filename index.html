@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Afrus test</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<div hidden id="spinner"></div>
+
+	<section id="">
+        <div class="container">
+
+            <h2>Problema 6:</h2>
+            <p>
+                Crear una página en donde se muestre un campo de texto que permita buscar en el siguiente API:
+                https://pokeapi.co/, por el número o nombre del pokémon y muestre en pantalla los siguientes datos: Nombre,
+                número, tipo, peso, altura y una imágen.
+            </p>
+            <div id="search_box">
+
+                <form id="search_form" class="form-inline">
+                    <div class="form-group mb-2">
+                      <label for="name" class="sr-only">Password</label>
+                      <input type="text" class="form-control" id="name" name="name" placeholder="search">
+                    </div>
+                    <button type="submit" class="ml-2 btn btn-primary mb-2">Buscar</button>
+                  </form>
+            </div>
+            <div id="pokemon_container"></div>
+        </div>
+	</section>
+
+	<script src="script.js"></script>
+</body>
+
+</html>
